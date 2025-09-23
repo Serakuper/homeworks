@@ -1,0 +1,54 @@
+
+@import url("reset.css");
+
+*{
+   color: brown;
+}
+
+p {
+   color: blue;
+}
+
+.title {
+   color: rgb(78, 202, 130);
+}
+
+.mother {
+   color: black;
+}
+
+#end-of-the-road{
+   color: black;
+}
+
+[href]{
+   color: rgb(66, 253, 19);
+}
+
+div,span {
+   color: rgb(16, 125, 88);
+}
+
+.facts-list-1, .facts-list-3, .facts-list-6, .facts-list-10 {
+   color: blueviolet;
+}
+
+ul li {
+   color: rgb(235, 139, 14);
+}
+
+p mark{
+   color: rgb(250, 9, 9);
+}
+
+ol > li {
+   color: green;
+}
+
+div + p {
+   color: blueviolet;
+}
+
+h2 ~ p {
+   color: rgb(241, 10, 161);
+}
