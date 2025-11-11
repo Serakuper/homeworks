@@ -1,0 +1,219 @@
+
+@import url("reset.css");
+
+@import url("fonts.css");
+
+[class*="__container"]{
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	overflow: clip;
+   font-size: 0;
+}
+
+.header{
+   font-weight: 800;
+   font-size: 30px;
+   margin-bottom: 40px;
+}
+.main {
+   
+   margin-bottom: 100px;
+}
+
+.trein {
+   margin-left: 200px;
+}
+
+.pipe-trein {
+   position: relative;
+   display: inline-block;
+   top: 150px;
+   left: 10px;
+}
+.pipe-trein::after{
+   content: "";
+   position: absolute;
+   top: 50px;
+   left: 200px;
+   width: 70px;
+   height: 50px;
+   background-color: #f45d0c;
+   border-radius: 20px 20px 0 0;
+
+}
+.pipe-trein__smoke {
+   position: absolute;
+   width: 80px;
+   height: 130px;
+   border-radius: 50%;
+   top: -100px;
+   left: 25px;
+   background-color: #61605d;
+   transform: rotateX(80deg)
+}
+.pipe-trein__smoke:hover{
+   scale: 1.4;
+}
+.pipe-trein__smoke::before{
+   content: "";
+   position: absolute;
+   width: 100px;
+   height: 130px;
+   border-radius: 50%;
+   top: -200px;
+   left: 15px;
+   background-color: #61605d;
+   transform: rotateX(30deg)
+}
+
+.pipe-trein__smoke::after{
+   content: "";
+   position: absolute;
+   width: 130px;
+   height: 160px;
+   border-radius: 50%;
+   top: -400px;
+   left: 65px;
+   background-color: #61605d;
+   transform: rotateX(30deg)
+}
+
+.pipe-trein__top {
+   margin-left: 15px;
+   width: 100px;
+   height: 30px;
+   background-color: black;
+}
+
+.pipe-trein__bottom {
+   margin-left: 30px;
+   width: 70px;
+   height: 70px;
+   background-color: black;
+}
+
+
+.body-trein__engine {
+   display: inline-block;
+   border-radius: 30px 0 0 0;
+   width: 400px;
+   height: 220px;
+   background: linear-gradient(rgb(254, 2, 2), rgb(49, 13, 13));
+}
+
+.cabin {
+   display: inline-block;
+   position: relative;
+}
+.cabin__top {
+   position: absolute;
+   top: 0;
+   left: -25px;
+   width: 300px;
+   height: 50px;
+   background-color: #140849;
+}
+.cabin__center {
+   width: 250px;
+   height: 370px;
+   background-color: #270cbc;
+}
+.cabin__center::before{
+   content: "";
+   position: absolute;
+   top: 80px;
+   left: 65px;
+   display: inline-block;
+   width: 120px;
+   height: 120px;
+   background-color: white;
+
+}
+.cabin__right {
+   width: 120px;
+   height: 220px;
+   background-color: #17034e;
+   position: absolute;
+   top: 200px;
+   left: 250px;
+
+}
+
+.body-trein__chassis {
+   width: 730px;
+   height: 120px;
+   background-color: black;
+   translate: -40px 0px;
+}
+.body-trein__chassis::before{
+   content: "";
+   position: absolute;
+   top: 40px;
+   left: -78px;
+   border-width: 60px 50px 20px 30px;
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-color: transparent black black transparent;
+}
+
+.wheels {
+	width: 700px;
+	position: relative;
+}
+.wheel {
+	width: 150px;
+	height: 150px;
+	bottom: 0;
+	position: absolute;
+   top: 50px;
+	background-color: #f80303;
+	border-radius: 50%;
+	border: 10px solid #000;
+
+}
+.wheel::after {
+	content: "";
+	width: 30%;
+	height: 30%;
+	border-radius: 50%;
+	background-color: #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+}
+
+.wheel:first-child {
+	left: 0;
+}
+.wheel:nth-child(2) {
+	left: 185px;
+}
+.wheel:nth-child(3) {
+	left: 370px;
+}
+.wheel:last-child {
+	right: 0;
+}
+
+.wheels::after{
+   content: "";
+   position: absolute;
+   top: 115px;
+   left: 60px;
+   width: 580px;
+   height: 20px;
+   background-color: black;
+   border-radius: 10%;
+}
+
+.footer{
+   font-size: 24px;
+   text-decoration: underline;
+}
