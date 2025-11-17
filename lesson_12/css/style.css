@@ -1,0 +1,375 @@
+
+@import url("reset.css");
+
+@import url("fonts.css");
+
+[class*="__container"]{
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	overflow: clip;
+   font-size: 0;
+   background-image: url(../img/flights.webp);
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+}
+
+.header{
+   font-weight: 800;
+   font-size: 30px;
+   margin-bottom: 40px;
+}
+
+
+.main {
+   position: relative;
+   margin-bottom: 0px;
+}
+
+.trein {
+   top: 40px;
+   left:0%;
+   scale: 0.5;
+   position: relative;
+   animation-name: trein;
+   animation-duration: 12s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+}
+
+@keyframes trein{
+   0%{
+      
+   }
+   40%{
+      left: 60%;
+   }
+   50%{
+      left: 60%;
+   }
+   100%{
+      left: -200%;
+   }
+}
+
+.pipe-trein {
+   position: relative;
+   display: inline-block;
+   top: 150px;
+   left: 10px;
+}
+.pipe-trein::after{
+   content: "";
+   position: absolute;
+   top: 50px;
+   left: 200px;
+   width: 70px;
+   height: 50px;
+   background-color: #f45d0c;
+   border-radius: 20px 20px 0 0;
+
+}
+.pipe-trein__one {
+   position: absolute;
+   width: 120px;
+   height: 70px;
+   border-radius: 50%;
+   top: -45px;
+   left: 5px;
+   background-color: #61605d;
+   animation-name: one;
+   animation-duration: 2s;
+   animation-timing-function: linear;
+   visibility: hidden;
+   border: 20px solid gray;
+   animation-iteration-count: infinite;
+}
+
+@keyframes one{
+   0%{
+      transform: scale(0.3);
+      visibility: visible;
+   }
+   100%{
+      transform: rotatex(70deg);
+      left: 60px;
+      top: -200px;
+      transform: scale(1);
+      
+   }
+}
+
+.pipe-trein__two {
+   position: absolute;
+   width: 120px;
+   height: 70px;
+   border-radius: 50%;
+   top: -45px;
+   left: 5px;
+   background-color: #61605d;
+   animation-name: two;
+   animation-duration: 2s;
+   animation-timing-function: linear;
+   visibility: hidden;
+   border: 20px solid gray;
+   animation-iteration-count: infinite;
+   animation-delay: 1s;
+}
+
+@keyframes two{
+   0%{
+      transform: scale(0.3);
+      visibility: visible;
+   }
+   100%{
+      transform: rotatex(70deg);
+      left: 60px;
+      top: -200px;
+      transform: scale(1);
+      
+   }
+}
+
+.pipe-trein__top {
+   margin-left: 15px;
+   width: 100px;
+   height: 30px;
+   background-color: black;
+}
+
+.pipe-trein__bottom {
+   margin-left: 30px;
+   width: 70px;
+   height: 70px;
+   background-color: black;
+}
+
+
+.body-trein__engine {
+   display: inline-block;
+   border-radius: 30px 0 0 0;
+   width: 400px;
+   height: 220px;
+   background: linear-gradient(rgb(254, 2, 2), rgb(49, 13, 13));
+}
+
+.cabin {
+   display: inline-block;
+   position: relative;
+}
+.cabin__top {
+   position: absolute;
+   top: 0;
+   left: -25px;
+   width: 300px;
+   height: 50px;
+   background-color: #140849;
+}
+.cabin__center {
+   width: 250px;
+   height: 370px;
+   background-color: #270cbc;
+}
+.cabin__center::before{
+   content: "";
+   position: absolute;
+   top: 80px;
+   left: 65px;
+   display: inline-block;
+   width: 120px;
+   height: 120px;
+   background-color: white;
+
+}
+.cabin__right {
+   width: 120px;
+   height: 220px;
+   background-color: #17034e;
+   position: absolute;
+   top: 200px;
+   left: 250px;
+
+}
+
+.body-trein__chassis {
+   width: 730px;
+   height: 120px;
+   background-color: black;
+   translate: -40px 0px;
+}
+.body-trein__chassis::before{
+   content: "";
+   position: absolute;
+   top: 40px;
+   left: -78px;
+   border-width: 60px 50px 20px 30px;
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-color: transparent black black transparent;
+}
+
+.wheels {
+	width: 700px;
+	position: relative;
+}
+.wheel {
+	width: 150px;
+	height: 150px;
+	bottom: 0;
+	position: absolute;
+   top: 50px;
+	background-color: #f80303;
+	border-radius: 50%;
+	border: 10px solid #000;
+}
+
+.wheel::after {
+	content: "";
+	width: 30%;
+	height: 30%;
+	border-radius: 50%;
+	background-color: #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+}
+
+.wheel:first-child {
+	left: 0;
+}
+.wheel:nth-child(2) {
+	left: 185px;
+}
+.wheel:nth-child(3) {
+	left: 370px;
+}
+.wheel:last-child {
+	right: 0;
+}
+
+.rod{
+   content: "";
+   position: absolute;
+   top: 115px;
+   left: 60px;
+   width: 565px;
+   height: 20px;
+
+   background-color: black;
+   border-radius: 10%;
+   animation-name: rod;
+   animation-duration: 12s;
+   animation-timing-function: linear;
+   transform-origin: top left;
+}
+
+@keyframes rod{
+   0%{
+      rotate: -4deg;
+      width: 570px;
+   }
+   10%{
+      width: 620px;
+      rotate: 0deg;
+   }
+   20%{
+      width: 570px;
+      rotate: 4deg;
+   }
+   30%{
+      width: 520px;
+      rotate: 0deg;
+   }
+   40%{
+      width: 570px;
+      rotate: -4deg;
+   }
+   50%{
+      width: 570px;
+      rotate: -4deg;
+   }
+   60%{
+      width: 520px;
+      rotate: 0deg;
+   }
+   70%{
+      width: 570px;
+      rotate: 4deg;
+
+   }
+   80%{
+      width: 620px;
+      rotate: 0deg;
+
+   }
+   90%{
+      width: 570px;
+      rotate: -4deg;
+
+   }
+   100%{
+      animation-iteration-count: infinite;
+   }
+}
+
+
+.car {
+   position: absolute;
+   top: -7px;
+   left: 690px;
+   display: inline-block;
+   animation-name: car;
+   animation-delay: 5.615s;
+   animation-duration: 7.655s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+}
+
+@keyframes car{
+   0%{
+      left: 60%;
+   }
+   100%{
+      left: -200%;
+   }
+}
+
+
+
+
+.car__top {
+   position: absolute;
+   top: 230px;
+   left: 853px;
+   display: inline-block;
+   width: 400px;
+   height: 200px;
+   background-color: yellow;
+   border: 5px double green;
+   border-radius: 10px;
+}
+
+
+.car__bottom {
+   position: absolute;
+   width: 730px;
+   height: 120px;
+   background-color: black;
+   top: 400px;
+   left: 685px;
+   scale: 0.5;
+}
+
+
+.footer{
+   font-size: 24px;
+   text-decoration: underline;
+}
