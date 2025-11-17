@@ -38,14 +38,14 @@
    scale: 0.5;
    position: relative;
    animation-name: trein;
-   animation-duration: 10s;
+   animation-duration: 12s;
    animation-timing-function: linear;
    animation-iteration-count: 1;
 }
 
 @keyframes trein{
    0%{
-      animation-duration: 4s;
+      
    }
    40%{
       left: 60%;
@@ -54,7 +54,7 @@
       left: 60%;
    }
    100%{
-      left: -100%;
+      left: -200%;
    }
 }
 
@@ -266,7 +266,7 @@
    background-color: black;
    border-radius: 10%;
    animation-name: rod;
-   animation-duration: 10s;
+   animation-duration: 12s;
    animation-timing-function: linear;
    transform-origin: top left;
 }
@@ -327,8 +327,8 @@
    left: 690px;
    display: inline-block;
    animation-name: car;
-   animation-delay: 4.47s;
-   animation-duration: 6.4s;
+   animation-delay: 5.615s;
+   animation-duration: 7.655s;
    animation-timing-function: linear;
    animation-iteration-count: 1;
 }
@@ -338,7 +338,7 @@
       left: 60%;
    }
    100%{
-      left: -100%;
+      left: -200%;
    }
 }
 
