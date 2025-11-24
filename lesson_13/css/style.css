@@ -1,0 +1,127 @@
+
+@import url("reset.css");
+
+@import url("fonts.css");
+
+[class*="__container"]{
+   max-width: 1392px;
+   margin: 0 auto;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	overflow: clip;
+   display: flex;
+   flex-direction: column;
+   font-family: "Lato-Medium",sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1.25;
+   color: #2f302c;
+} 
+
+.wrapper > main{
+   flex-grow: 1;
+}
+
+.header__container{
+   padding-top: 10px;
+   margin-bottom: 82px;
+}
+.main__title{
+   font-size: 32px;
+   font-weight: 800;
+   text-align: center;
+   margin-bottom: 36px;
+   text-transform: uppercase;
+}
+.main__container{
+   margin-bottom: 286px;
+}
+
+.menu {
+   margin-bottom: 72px;
+}
+
+.menu__items {
+   display: flex;
+   gap: 48px;
+   justify-content: center;
+}
+.menu__item:hover{
+   text-decoration: underline;
+   text-underline-offset: 8px;
+}
+.previews {
+   margin-bottom: 72px;
+   display: flex;
+   gap: 36px;
+   flex-wrap: wrap;
+
+}
+.preview {
+   flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: 440px;
+   border: 5px solid rgba(255, 255, 255, 0.641);
+   transition: 0.5s;
+}
+
+.preview:hover{
+   scale: 1.05;
+   border: 5px solid rgba(0, 0, 0, 0.641);
+   border-radius: 10px;
+}
+
+.preview__body {
+   text-align: center;
+
+}
+
+.preview__body > *:not(:last-child){
+   margin-bottom: 12px;
+}
+.preview__img {
+   display: block;
+   margin-bottom: 32px;
+}
+
+.preview__price {
+   font-size: 20px;
+   font-weight: 800;
+   line-height: 1.4;
+}
+
+.footer__container{
+padding-bottom: 15px;
+}
+.footer__title{
+   font-size: 32px;
+   font-weight: 800;
+   text-transform: uppercase;
+   margin-bottom: 72px;
+   text-align: center;
+}
+
+.feature {
+   gap: 68px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.feature__item > *:not(:last-child){
+   margin-bottom: 24px;
+}
+
+.feature__item {
+   text-align: center;
+   flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: 348px;
+}
+
+.feature__title {
+   text-transform: uppercase;
+   font-weight: 700;
+}
