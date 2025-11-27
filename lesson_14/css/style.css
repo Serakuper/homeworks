@@ -1,0 +1,172 @@
+
+@import url("reset.css");
+
+@import url("fonts.css");
+
+[class*="__container"]{
+   max-width: 1392px;
+   margin: 0 auto;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	overflow: clip;
+   display: flex;
+   flex-direction: column;
+   font-family: "Lato",sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1.25;
+   color: #2f302c;
+} 
+
+.wrapper > main{
+   flex-grow: 1;
+}
+
+.header__container{
+   padding-top: 10px;
+   margin-bottom: 82px;
+}
+.main__container{
+   margin-bottom: 82px;
+}
+footer{
+   padding-bottom: 15px;
+}
+
+.main__title {
+   font-size: 32px;
+   font-weight: 800;
+   text-align: center;
+   margin-bottom: 36px;
+}
+.main__subtitle {
+   font-weight: 700;
+   text-align: center;
+   margin-bottom: 164px;
+}
+.main__blok {
+   display: flex;
+   gap: 80px;
+}
+
+.form-main {
+   flex-basis: 712px;
+}
+.form-main__title {
+   font-size: 32px;
+   font-weight: 800;
+   margin-bottom: 36px;
+}
+.form-main__text {
+   color: #7e7f7c;
+   margin-bottom: 72px;
+}
+.form-main__link {
+   color: #2f302c;
+   font-weight: 700;
+}
+
+.form-main__link:hover{
+   text-decoration: underline;
+}
+
+
+
+.form {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 40px;
+   margin-bottom: 72px;
+}
+
+.form__item {
+   flex-basis: 336px;
+   flex-grow: 1;
+   flex-shrink: 1;
+}
+
+.form__item:nth-child(3) {
+   flex-basis: 712px;
+   flex-grow: 1;
+   flex-shrink: 1;
+}
+
+.form__input {
+   padding: 12px 0px;
+   border-bottom: 1px solid #d4d4d4;
+   color: #2f302c;
+}
+
+.form__input:focus {
+   outline: none;
+}
+
+.form__input::placeholder {
+   color: #7e7f7c;
+   opacity: 1;
+   transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.form__input:focus::placeholder {
+   opacity: 0;
+}
+
+.form-main__button {
+   padding: 12px 104px;
+   background-color: #2f302c;
+   color: #fff;
+   transition: all 0.5s;
+}
+
+.form-main__button:hover{
+   background-color: green;
+   scale: 1.1;
+}
+
+button:active{
+   transform:scale(0.95) ;
+}
+
+.discount-main {
+   flex-basis: 600px;
+   position: relative;
+   background-color: #f6f6f6;
+   overflow: hidden;
+}
+
+.discount-main__text{
+   display: flex;
+   flex-direction: column;
+   flex-basis: 160px;
+   gap: 24px;
+   padding-top: 224px;
+   padding-left: 80px;
+   padding-bottom: 60px;
+}
+.discount-main__text span {
+   padding: 4px 8px;
+   max-width: 51px;
+   box-sizing: border-box;
+   align-items: flex-start;
+   border-radius: 4px 4px 4px 4px;
+   background-color: #ce0000;
+   color: #fff;
+}
+
+.discount-main__text p {
+   display: flex;
+   flex-direction: column;
+
+   font-size: 32px;
+   font-weight: 800;
+}
+.discount-main__img {
+   position: absolute;
+   top: 0;
+   right: 50px;
+   max-width: 100%;
+   max-height: 100%;
+}
